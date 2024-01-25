@@ -13,6 +13,7 @@ public class Ex01 {
 		
 		System.out.println("종우는 짜장면");
 		System.out.println("신신식당은 뭐지");
+		System.out.println("신신식당 목요일 수육나온대!!!");
 	
 	}
 
