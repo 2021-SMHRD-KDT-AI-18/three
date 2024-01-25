@@ -81,7 +81,7 @@ public class Ex01 {
 				System.out.println("오늘의 메뉴는 " +randomMenu+ "입니다.");
 				System.out.println();
 			}
-			sc.close();
+
 
 	
 	}
