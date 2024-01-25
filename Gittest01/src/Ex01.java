@@ -10,6 +10,7 @@ public class Ex01 {
 		
 		System.out.println("종우는 짜장면");
 		System.out.println("신신식당은 뭐지");
+<<<<<<< HEAD
 			String[] menu = {
 					"프랭크버거",
 					"일식돈까스",
@@ -80,6 +81,9 @@ public class Ex01 {
 				System.out.println();
 			}
 			sc.close();
+=======
+		System.out.println("신신식당 목요일 수육나온대!!!");
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-AI-18/three.git
 	
 	}
 
