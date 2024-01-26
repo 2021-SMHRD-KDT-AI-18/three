@@ -16,6 +16,7 @@ public class view {
 		int comWin=0; //컴퓨터 승점
 		int history=0; //전적
 		int draw=0; //비긴횟수
+		int c=0;//내가고른숫자와 값을가진숫자가 같은 어레이리스트의 인덱스번호
 		Scanner sc=new Scanner(System.in);
 		Random ran=new Random();
 		for(int i=0; i<comNumber.length; i++) {
@@ -37,22 +38,25 @@ public class view {
 		while(count<9) {
 			com=comNumber[count];
 			if(com%2==0) {
-				System.out.println("흑");
-			}else {System.out.println("백");}
-			System.out.println(com);
+				System.out.print("흑");
+			}else {System.out.print("백");}
+			//System.out.println(com); 
 			System.out.print("[");
 			for(int b : playerNumber) {System.out.print(b+" ");}
-			System.out.println("]");
-			System.out.print("남은 숫자 중 낼숫자: ");
+			System.out.print("]");
+			System.out.print(" 남은 숫자 중 낼숫자: ");
 			int select=sc.nextInt();
-			player=playerNumber.get(draw);
-			playerNumber.remove(select);
+			for(c=0; c<playerNumber.size(); c++) {
+				if(select==playerNumber.get(c)) {
+					player=playerNumber.get(c);	break;	}
+			}
+			playerNumber.remove(c);
 			if(com<player) {
-				System.out.println("승리"); playerWin++; count++;
+				System.out.print(" 승리"); playerWin++; count++;
 			}else if(com==player) {
-				System.out.println("비겼습니다"); draw++; count++;
+				System.out.print(" 비겼습니다"); draw++; count++;
 			}else {
-				System.out.println("패배"); comWin++; count++;
+				System.out.print(" 패배"); comWin++; count++;
 			}
 			if(playerWin>=5) {System.out.println("다음강 진출"); break;}
 			if(comWin>=5) {System.out.println("xx강 탈락"); break;}
