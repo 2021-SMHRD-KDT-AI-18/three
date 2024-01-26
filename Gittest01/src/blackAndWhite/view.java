@@ -56,7 +56,11 @@ public class view {
 			draw=0;
 			playerWin=0;
 		while(count<9) {
-			com=comNumber[count];
+			if(nextStage==0) {com=comNumber[count];}
+			else if(nextStage==1) {com=comNumber[count];}
+			else if(nextStage==2) {com=comNumber[count];}
+			else if(nextStage==3) {com=comNumber[count];}
+			
 			if(com%2==0) {
 				System.out.print("흑");
 			}else {System.out.print("백");}
@@ -85,7 +89,7 @@ public class view {
 				System.out.print("패배"); comWin++; count++;
 			}
 			}
-			else if(mapPattern==1) {//작은수가 승리
+			else if(mapPattern==1) {
 				System.out.println("작은수가 승리");
 				if(com>player) {
 					System.out.print("승리"); playerWin++; count++;
@@ -95,7 +99,7 @@ public class view {
 					System.out.print("패배"); comWin++; count++;
 				}
 				}
-			else if(mapPattern==2) {//짝수가승리 둘다짝수시 큰수가승리
+			else if(mapPattern==2) {
 				System.out.println("짝수가 승리 둘다 짝수일시 큰수가 승리");
 				if(player%2==0 && com%2==1) {
 					System.out.print("승리"); playerWin++; count++;}
@@ -108,10 +112,16 @@ public class view {
 				}else  if(player%2==0 && com%2==0 &&player<com) 
 				{
 				System.out.print("패배"); comWin++; count++;
-				
 				}
+				else if(player%2==1 && com%2==1 &&player>com) {
+					System.out.print("승리"); playerWin++; count++;
+				}
+				else if(player%2==1 && com%2==1 &&player<com) {
+					System.out.print("패배"); comWin++; count++;
+				}
+				
 			}
-			else if(mapPattern==3) {//4에 가까운수가 승리
+			else if(mapPattern==3) {
 				System.out.println("4에 가까운수가 승리");
 				if(Math.abs(player-4)>Math.abs(com-4)) {
 					System.out.print("패배"); comWin++; count++;
@@ -124,7 +134,7 @@ public class view {
 					
 					
 					
-			else if(mapPattern==4) {//약수면 작은수가 승리
+			else if(mapPattern==4) {
 				System.out.println("약수면 작은수가 승리 약수 아닐시 큰수가승리 한명만 0일시 0이패배");
 				if(com==0 && player !=0) {
 					System.out.print("승리"); playerWin++; count++;
