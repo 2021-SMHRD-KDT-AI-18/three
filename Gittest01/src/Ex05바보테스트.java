@@ -8,7 +8,7 @@ public class Ex05바보테스트 {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("정수를 입력해주세요");
 		int n=sc.nextInt();
-		int a=ran.nextInt(1);
+		int a=ran.nextInt(2);
 		if(n%2==a) {System.out.println("천재입니다");}
 		else {System.out.println("바보입니다");}
 		//실행 해주세요
