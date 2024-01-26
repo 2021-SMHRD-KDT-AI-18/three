@@ -16,11 +16,7 @@ public class DB연결 {
 			
 		}
 
-		/*if (conn != null) {
-			System.out.println("Connection 연결 성공");
-		} else {
-			System.out.println("연결 실패");
-		}*/
+		
 	}
 	
 
