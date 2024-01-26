@@ -40,7 +40,6 @@ public class view {
 		
 		
 		
-		
 		//게임시작
 		while(nextStage<=3) {
 			if(nextStage==0) {System.out.println("16강");}
@@ -57,8 +56,12 @@ public class view {
 			playerWin=0;
 		while(count<9) {
 			if(nextStage==0) {com=comNumber[count];}
-			else if(nextStage==1) {com=comNumber[count];}
-			else if(nextStage==2) {com=comNumber[count];}
+			else if(nextStage==1) {com=comNumber[count]+1;}
+			else if(nextStage==2) {
+				if(count%3==0) {
+					com=comNumber[count]+5;
+					}else {com=comNumber[count];}
+			}
 			else if(nextStage==3) {com=comNumber[count];}
 			
 			if(com%2==0) {
