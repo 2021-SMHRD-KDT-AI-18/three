@@ -225,6 +225,7 @@ public class view {
 			}
 				
 		}
+			}
 
 			System.out.println(" -> 전적: "+count+"전 "+playerWin+"승 "+comWin+"패 "+draw+"무");
 			if(nextStage==0) {lose="16강 패배"; win="8강 진출";}
@@ -256,10 +257,12 @@ public class view {
                           }//while count }
                              if(nextStage==0 && comWin>playerWin &&comWin+playerWin==count ) {break;}
 		               }// while  nextStage}
-
+		
+		
 		
 	
 	
 }// main }
 }//class }
+	
 
