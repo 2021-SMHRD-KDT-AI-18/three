@@ -54,9 +54,8 @@ public class view {
 			draw=0;
 			playerWin=0;
 		while(count<9) {
-<<<<<<< HEAD
-			com=comNumber[count];
-=======
+
+
 			if(nextStage==0) {com=comNumber[count];}
 			else if(nextStage==1) {
 				com=comNumber[count]+1;
@@ -78,7 +77,7 @@ public class view {
 					}
 				}
 			
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-AI-18/three.git
+
 			if(com%2==0) {
 				System.out.print("흑");
 			}else {System.out.print("백");}
@@ -157,13 +156,13 @@ public class view {
 					System.out.print("패배"); comWin++; count++;
 				}
 				}
-<<<<<<< HEAD
+
 			else if(mapPattern==2) {//짝수가승리 둘다짝수시 큰수가승리
 				System.out.println("짝수가 승리 둘다 짝수일시 큰수가 승리");
-=======
+
 			else if(mapPattern==2) {
 				System.out.println("짝수가 승리( 둘다 짝수나 홀수 일시 큰수가 승리)");
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-AI-18/three.git
+
 				if(player%2==0 && com%2==1) {
 					System.out.print("승리"); playerWin++; count++;}
 				else  if(player%2==0 && com%2==0 &&player>com) {
@@ -191,13 +190,13 @@ public class view {
 					
 					
 					
-<<<<<<< HEAD
+
 			else if(mapPattern==4) {//약수면 작은수가 승리
 				System.out.println("약수면 작은수가 승리 약수 아닐시 큰수가승리 한명만 0일시 0이패배");
-=======
+
 			else if(mapPattern==4) {
 				System.out.println("약수면 작은수가 승리 (약수 아닐시 큰수가승리 한명만 0일시 0이패배)");
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-AI-18/three.git
+
 				if(com==0 && player !=0) {
 					System.out.print("승리"); playerWin++; count++;
 				}
