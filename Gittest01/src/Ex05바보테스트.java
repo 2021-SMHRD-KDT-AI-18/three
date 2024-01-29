@@ -8,11 +8,8 @@ public class Ex05바보테스트 {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("정수를 입력해주세요");
 		int n=sc.nextInt();
-<<<<<<< HEAD
-		int a=ran.nextInt(2);
-=======
+
 		int a=ran.nextInt(2); 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-AI-18/three.git
 		if(n%2==a) {System.out.println("천재입니다");}
 		else {System.out.println("바보입니다");}
 	System.out.println(a);
