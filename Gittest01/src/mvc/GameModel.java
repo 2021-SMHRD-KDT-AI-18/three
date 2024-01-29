@@ -1,9 +1,10 @@
 package mvc;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class gameModel {
+public class GameModel {
     private int[] comNumber;
     private List<Integer> playerNumber;
     private int[] array;
@@ -13,13 +14,12 @@ public class gameModel {
     private int playerWin;
     private int comWin;
     private int draw;
-    private int history;
     private int c;
     private int mapPattern;
     private int nextStage;
     private int ra;
 
-    public gameModel() {
+    public GameModel() {
         comNumber = new int[9];
         playerNumber = new ArrayList<>();
         array = new int[9];
@@ -27,7 +27,6 @@ public class gameModel {
         comWin = 0;
         draw = 0;
         playerWin = 0;
-        history = 0;
         c = 0;
         mapPattern = 0;
         nextStage = 0;
@@ -68,10 +67,6 @@ public class gameModel {
 
     public int getDraw() {
         return draw;
-    }
-
-    public int getHistory() {
-        return history;
     }
 
     public int getC() {
